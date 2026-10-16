@@ -1,4 +1,4 @@
-// SENSOR: acelerómetro (expo-sensors) -> nivel de burbuja
+// SENSOR
 import { useEffect, useRef, useState } from 'react';
 import { View, Text, Platform, StyleSheet } from 'react-native';
 import { Accelerometer } from 'expo-sensors';
@@ -9,7 +9,6 @@ import { Colors } from '@/constants/theme';
 const SIZE = 240;
 const BUBBLE = 44;
 const toDeg = (g: number) => (Math.asin(Math.max(-1, Math.min(1, g))) * 180) / Math.PI;
-// Diferencia por SO: el eje X tiene signo opuesto en iOS y Android
 const SIGN = Platform.OS === 'ios' ? -1 : 1;
 
 export default function LevelScreen() {
@@ -57,7 +56,7 @@ export default function LevelScreen() {
 
   return (
     <View style={s.screen}>
-      <Text style={s.title}>Nivel de burbuja</Text>
+      <Text style={s.title}>Medidor de angulo</Text>
       <Text style={s.subtitle}>Apoya el teléfono sobre una superficie plana.</Text>
       <Card style={{ alignItems: 'center' }}>
         <View style={[st.dial, isLevel && { borderColor: Colors.accent }]}>
