@@ -31,4 +31,4 @@ npm install
 npx expo install --fix
 npx expo start
 ```
-Escanea el QR con Expo Go. Cambia `com.tuusuario.explorador` en `app.json` antes de compilar.
+
