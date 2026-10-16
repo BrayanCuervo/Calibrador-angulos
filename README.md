@@ -8,7 +8,7 @@ explorador/
 │   ├── _layout.tsx          # Layout raíz
 │   └── (tabs)/
 │       ├── _layout.tsx      # Configuración de Tabs
-│       ├── index.tsx        # Sensor: nivel de burbuja (acelerómetro)
+│       ├── index.tsx        # Sensor: nivel de inclinacion 
 │       ├── audio.tsx        # Nativa 1: grabación de audio
 │       └── location.tsx     # Nativa 2: geolocalización
 ├── components/ui.tsx        # Card, Button, Row y estilos compartidos
