@@ -1,4 +1,4 @@
-# Calibrador-angulos 📱
+# Calibrador-angulos 
 
 App móvil con React Native + Expo Router (navegación solo por **Tabs**).
 
