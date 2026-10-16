@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Explorador",
+    "slug": "explorador",
+    "scheme": "explorador",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "bundleIdentifier": "com.BrayanCuervo.explorador",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMotionUsageDescription": "Se usa el acelerómetro para el nivel de burbuja."
+      }
+    },
+    "android": {
+      "package": "com.BrayanCuervo.explorador",
+      "permissions": [
+        "RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Explorador necesita el micrófono para grabar audio."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Explorador necesita tu ubicación para mostrar dónde estás."
+        }
+      ],
+      "expo-status-bar",
+      "expo-font",
+      "expo-asset"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "d9ca43e7-466d-4913-ba02-eaa568541f7d"
+      }
+    }
+  }
+}
