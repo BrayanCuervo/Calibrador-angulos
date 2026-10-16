@@ -17,7 +17,7 @@ explorador/
 ├── app.json · eas.json · package.json · tsconfig.json
 ```
 
-## Validación de sistema operativo (`Platform`)
+## Validación de sistema operativo
 - Signo del eje X del acelerómetro (iOS vs Android).
 - Vibración distinta por plataforma.
 - Modo de audio de iOS (`playsInSilentMode`) al grabar.
